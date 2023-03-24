@@ -100,4 +100,14 @@ describe("Login.vue initialization", () => {
         expect(wrapper.vm.$router.push).toHaveBeenCalledTimes(1);
         expect(wrapper.vm.$router.push).toHaveBeenCalledWith("/reset-password");
     })
+
+    it('Should update value after timer run', async () => {
+        jest.useFakeTimers();
+        expect(wrapper.vm.timerValue).toBe('');
+        await wrapper.vm.timerTest();
+        expect(wrapper.vm.timerValue).toBe('');
+
+        jest.runAllTimers();
+        expect(wrapper.vm.timerValue).toBe('timer executed');
+    })
 });

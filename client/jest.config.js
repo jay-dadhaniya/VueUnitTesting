@@ -16,6 +16,7 @@ module.exports = {
   ],
   // glob patterns Jest uses to detect test files
   testMatch: [`<rootDir>/**/*.spec.js`],
+  // Setup file to run before test cases
   setupFiles: ['<rootDir>/unitTestUtils/test.config.js'],
   collectCoverage: false,
   collectCoverageFrom: [

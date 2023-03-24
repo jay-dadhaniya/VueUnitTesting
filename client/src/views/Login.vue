@@ -62,7 +62,8 @@ export default {
                 username: "",
                 password: "",
                 type: "admin",
-            }
+            },
+            timerValue:''
         };
     },
 
@@ -82,6 +83,12 @@ export default {
                 }
             });
         },
+
+        timerTest() {
+            setTimeout(() => {
+                this.timerValue = 'timer executed'
+              }, 5000);
+        }
     },
 };
 </script>
