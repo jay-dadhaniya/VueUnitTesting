@@ -7,7 +7,7 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "dev": "npm run serve",
-    "test": "vue-cli-service test:unit --silent",
+    "test": "vue-cli-service test:unit",
     "test-coverage": "vue-cli-service test:unit --coverage --silent"
   },
   "main": "src/main.js",
